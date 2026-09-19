@@ -23,7 +23,6 @@
   <img src="https://skillicons.dev/icons?i=python,c,cpp,java,pytorch,tensorflow,scikitlearn,flask,fastapi,git,github,mysql,mongodb,vercel,threejs,linux,ubuntu,windows,anaconda,bash,vscode,pycharm,atom,arduino,androidstudio,replit,discord,notion,obsidian,linkedin,instagram,wordpress,figma,gmail,unrealengine&perline=9" />
 </p>
 
-*Verified against skillicons.dev's full icon set (397 icons) — no icon exists there for Assembly, Snapseed, Canva, Spotify, or Firebase, so those aren't shown as logos.*
 
 ### 🤖 AI Tools & Models I Use
 
