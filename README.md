@@ -16,6 +16,14 @@
 
 ---
 
+### 💭 Quote of the Day
+
+<p align="center">
+  <img src="https://readme-daily-quotes.vercel.app/api?theme=github_dark&category=programming" alt="Daily Quote" />
+</p>
+
+---
+
 ### 🛠️ Tech Stack & Tools
 
 <p align="center">
