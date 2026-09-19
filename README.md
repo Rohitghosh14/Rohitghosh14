@@ -20,7 +20,7 @@
 ### 🛠️ Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,c,cpp,java,pytorch,tensorflow,scikitlearn,flask,,firebase,fastapi,gitlab,git,github,mysql,mongodb,vercel,threejs,linux,ubuntu,windows,anaconda,bash,vscode,pycharm,atom,arduino,androidstudio,replit,Assembly,ps,Snapseed, Spotify, discord, notion, obsidian,linkedin,instagram,wordpress,figma,gmail,unrealengine&perline=9](https://skillicons.dev/icons?i=python,c,cpp,java,pytorch,tensorflow,scikitlearn,flask,fastapi,gitlab,git,github,mysql,mongodb,vercel,threejs,linux,ubuntu,windows,anaconda,bash,vscode,pycharm,atom,arduino,androidstudio,replit,photoshop,discord,notion,obsidian,linkedin,instagram,wordpress,figma,gmail,unrealengine&perline=9" />
+  <img src="https://skillicons.dev/icons?i=python,c,cpp,java,pytorch,tensorflow,scikitlearn,flask,fastapi,gitlab,git,github,mysql,mongodb,vercel,threejs,linux,ubuntu,windows,anaconda,bash,vscode,pycharm,atom,arduino,androidstudio,replit,photoshop,discord,notion,obsidian,linkedin,instagram,wordpress,figma,gmail,unrealengine&perline=9" />
 </p>
 
 
