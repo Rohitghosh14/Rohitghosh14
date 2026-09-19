@@ -17,33 +17,15 @@
 
 ---
 
-### 🛠️ Languages & Core Stack
+### 🛠️ Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,c,cpp,java,pytorch,tensorflow,sklearn&perline=7" />
+  <img src="https://skillicons.dev/icons?i=python,c,cpp,java,pytorch,tensorflow,scikitlearn,flask,fastapi,git,github,mysql,mongodb,vercel,threejs,linux,ubuntu,windows,anaconda,bash,vscode,pycharm,atom,arduino,androidstudio,replit,discord,notion,obsidian,linkedin,instagram,wordpress,figma,gmail,unrealengine&perline=9" />
 </p>
 
-### ⚙️ Frameworks & Backend
+*Verified against skillicons.dev's full icon set (397 icons) — no icon exists there for Assembly, Snapseed, Canva, Spotify, or Firebase, so those aren't shown as logos.*
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=flask,fastapi,firebase,mongodb,mysql,vercel,threejs&perline=7" />
-</p>
-
-### 🧰 Tools, IDEs & OS
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,pycharm,atom,arduino,linux,ubuntu,windows,anaconda,bash&perline=11" />
-</p>
-
-### 📱 Apps & Platforms
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=discord,notion,obsidian,linkedin,instagram,wordpress,figma,ps,replit,unreal,gmail&perline=11" />
-</p>
-
-*A few tools I use don't have a logo available anywhere (skillicons.dev, shields.io) — Assembly, Snapseed, Spotify, Canva.*
-
-### 🤖 AI Tools & Models I Work With
+### 🤖 AI Tools & Models I Use
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&color=A78BFA&center=true&vCenter=true&width=700&lines=ChatGPT+(OpenAI);Claude+(Anthropic);Google+Gemini;DeepSeek" alt="AI tools ticker" />
