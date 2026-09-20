@@ -98,10 +98,11 @@
   <img src="https://streak-stats.demolab.com/?user=Rohitghosh14&hide_border=true&background=0D1117&ring=A78BFA&fire=58A6FF&currStreakNum=58A6FF&currStreakLabel=C9D1D9&sideLabels=C9D1D9&sideNums=58A6FF&dates=8B949E" alt="GitHub Streak" />
 </p>
 
----
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Rohitghosh14&label=Profile%20Views&color=58A6FF&style=for-the-badge" alt="Profile Views" />
 </p>
+
+---
 
 ### 🌐 Connect
 
