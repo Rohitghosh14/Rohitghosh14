@@ -104,6 +104,10 @@
 </p>
 
 ---
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Rohitghosh14&label=Profile%20Views&color=58A6FF&style=for-the-badge" alt="Profile Views" />
+</p>
+---
 
 ### 🌐 Connect
 
