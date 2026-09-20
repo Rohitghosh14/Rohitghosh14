@@ -11,9 +11,12 @@
 
 - About Me
 🎓 AI/ML engineering student following a structured, project-driven curriculum toward ML/AI Engineer roles
--🔭 Currently working on AOD-Net (from-scratch image dehazing rebuild) and Rio (desktop AI companion)
--🌱 Filling gaps in deep learning, NLP and MLOps through hands-on projects
--💻 Train on Kaggle/Colab (no local GPU), local machine for light inference/testing only
+
+- 🔭 Currently working on AOD-Net (from-scratch image dehazing rebuild) and Rio (desktop AI companion)
+
+- 🌱 Filling gaps in deep learning, NLP and MLOps through hands-on projects
+
+- 💻 Train on Kaggle/Colab (no local GPU), local machine for light inference/testing only
 
 ---
 
