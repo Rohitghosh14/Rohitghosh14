@@ -1,4 +1,4 @@
-import datetime, json, math, os, urllib.parse, urllib.request
+import datetime, json, math, os, urllib.request
 from html import escape
 
 USER = "Rohitghosh14"
@@ -14,8 +14,6 @@ ROLES = [("BUILDING", "AOD-Net, from-scratch image dehazing rebuild"),
          ("TRAINING", "On Kaggle / Colab (no local GPU)")]
 FEATURED = ["exoplanet-habitability-predictor", "fifa-worldcup-2026-predictor",
             "movie-recommender-model", "GUI_PASSWORD_MANAGER", "rio-ai-companion"]
-REGIONS = [("World", ""), ("India", "location:India"), ("USA", 'location:"United States"'),
-           ("UK", 'location:"United Kingdom"'), ("China", "location:China")]
 
 THEMES = {
     "dark": dict(bg="#0b0e17", fg="#e8eaf4", muted="#9aa1b8", accent="#8b93ff", rule="#363b50", dot="#1b2033"),
@@ -78,17 +76,7 @@ def contributions():
         return 0, 0, 0, 0
 
 
-def rank(followers, extra):
-    q = f"followers:>{followers} {extra}".strip()
-    try:
-        return api("/search/users?q=" + urllib.parse.quote(q))["total_count"] + 1
-    except Exception:
-        return None
-
-
 def fmt(n):
-    if n is None:
-        return "-"
     n = int(n)
     if n >= 1_000_000:
         return f"{n / 1_000_000:.1f}M"
@@ -119,9 +107,8 @@ def fetch():
             ("MAINTENANCE", clamp(recent / 10 * 100)),
             ("COMMUNITY", clamp((followers + stars) / 200 * 100))]
     by = {r["name"].lower(): r for r in repos}
-    ranks = [(n, rank(followers, e)) for n, e in REGIONS]
     return dict(
-        followers=followers, hero=ranks[0][1], ranks=ranks, axes=axes,
+        followers=followers, repos=user["public_repos"], axes=axes,
         score=sum(a[1] for a in axes) / 5,
         activity=[("Owned stars", stars), ("Commits", commits), ("PRs", prs),
                   ("Issues", issues), ("Reviews", reviews), ("Public repos", user["public_repos"])],
@@ -242,14 +229,14 @@ def render(theme, mobile, d):
     y += 26
     o.append(tx(P, y, " · ".join(BADGES), 9 if mobile else 12, t["muted"], ls=0 if mobile else 1))
     top = y + 34
-    hero = "#" + fmt(d["hero"])
+    hero = f'{d["repos"]} REPOS'
 
     if not mobile:
-        o.append(tx(P, top + 14, "FIG_001 / WORLD FOLLOWER RANK", 12, t["fg"], weight=700, ls=1))
+        o.append(tx(P, top + 14, "FIG_001 / PUBLIC REPOSITORIES", 12, t["fg"], weight=700, ls=1))
         o.append(px(P, top + 36, hero, 14, t["accent"]))
         o.append(waves(P, 760, top + 200, t))
         o.append(tx(P, top + 330, f'{d["followers"]:,} PUBLIC FOLLOWERS', 26, t["fg"], SERIF))
-        o.append(tx(P, top + 354, "Rank = GitHub users with more followers, plus one", 12, t["accent"]))
+        o.append(tx(P, top + 354, "Public data, refreshed daily", 12, t["accent"]))
         o.append(f'<line x1="800" y1="{top}" x2="800" y2="{top + 390}" stroke="{t["rule"]}" stroke-dasharray="2 5"/>')
         o.append(tx(840, top + 14, "FIG_002 / BUILDER PROFILE", 12, t["fg"], weight=700, ls=1))
         o.append(radar(985, top + 170, 95, d["axes"], t, 11))
@@ -257,10 +244,10 @@ def render(theme, mobile, d):
         o.append(tx(W - P, top + 392, "PUBLIC DATA ONLY", 10, t["muted"], anchor="end"))
         y = top + 410
     else:
-        o.append(tx(P, top + 14, "FIG_001 / WORLD FOLLOWER RANK", 11, t["fg"], weight=700, ls=1))
+        o.append(tx(P, top + 14, "FIG_001 / PUBLIC REPOSITORIES", 11, t["fg"], weight=700, ls=1))
         o.append(px(P, top + 32, hero, 9, t["accent"]))
         o.append(tx(P, top + 128, f'{d["followers"]:,} PUBLIC FOLLOWERS', 18, t["fg"], SERIF))
-        o.append(tx(P, top + 148, "Rank = users with more followers, plus one", 10, t["accent"]))
+        o.append(tx(P, top + 148, "Public data, refreshed daily", 10, t["accent"]))
         y = top + 180
         o.append(rule(P, W - P, y, t))
         o.append(tx(P, y + 26, "FIG_002 / BUILDER PROFILE", 11, t["fg"], weight=700, ls=1))
@@ -272,10 +259,7 @@ def render(theme, mobile, d):
     y = section(y, "FIG_003 / PUBLIC ACTIVITY · 365 DAYS")
     y = stats([(a, fmt(b)) for a, b in d["activity"]], 2 if mobile else 6, y, 4 if mobile else 5)
 
-    y = section(y, "FIG_004 / FOLLOWER RANK BY REGION")
-    y = stats([(n, "#" + fmt(v)) for n, v in d["ranks"]], 3 if mobile else 5, y, 4 if mobile else 5)
-
-    y = section(y, "FIG_005 / TOP REPOSITORIES")
+    y = section(y, "FIG_004 / TOP REPOSITORIES")
     for r in d["top"]:
         meta = f'★ {r["stargazers_count"]}' + (f' · {r["language"]}' if r["language"] else "")
         desc = r["description"] or "No description yet"
@@ -291,7 +275,7 @@ def render(theme, mobile, d):
             y += 36
     y += 8
 
-    y = section(y, "FIG_006 / CURRENTLY")
+    y = section(y, "FIG_005 / CURRENTLY")
     for lab, s in ROLES:
         o.append(tx(P, y + 14, lab, 11 if mobile else 12, t["accent"], weight=700, ls=1))
         o.append(tx(P + (90 if mobile else 130), y + 14, clip(s, 38 if mobile else 100),
@@ -299,7 +283,7 @@ def render(theme, mobile, d):
         y += 28 if mobile else 32
     y += 8
 
-    y = section(y, "FIG_007 / TECH STACK")
+    y = section(y, "FIG_006 / TECH STACK")
     x = P
     for s in STACK:
         w = len(s) * (6.8 if mobile else 7.4) + 22
