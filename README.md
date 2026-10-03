@@ -3,7 +3,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/public-builder-profile-mobile-dark.svg" />
   <source media="(max-width: 600px)" srcset="./assets/public-builder-profile-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/public-builder-profile-dark.svg" />
-  <img src="./assets/public-builder-profile.svg" alt="Rohit Ghosh. AI/ML engineering student in Kolkata building ML systems end-to-end. Public GitHub statistics, follower rank, languages, tech stack and top repositories." width="100%" />
+  <img src="./assets/public-builder-profile.svg" alt="Rohit Ghosh. AI/ML engineering student in Kolkata building ML systems end-to-end. Public GitHub statistics, follower rank, builder index, top repositories and tech stack." width="100%" />
 </picture>
 </a>
 
