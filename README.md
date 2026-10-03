@@ -1,13 +1,9 @@
 <a href="https://github.com/Rohitghosh14?tab=repositories">
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/public-builder-profile-mobile-dark.svg" />
   <source media="(max-width: 600px)" srcset="./assets/public-builder-profile-mobile.svg" />
-  <img src="./assets/public-builder-profile.svg#gh-light-mode-only" alt="Rohit Ghosh. AI/ML engineering student in Kolkata building ML systems end-to-end. Public GitHub statistics, follower rank, languages, tech stack and top repositories." width="100%" />
-</picture>
-</a>
-<a href="https://github.com/Rohitghosh14?tab=repositories">
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/public-builder-profile-mobile-dark.svg" />
-  <img src="./assets/public-builder-profile-dark.svg#gh-dark-mode-only" alt="Rohit Ghosh. AI/ML engineering student in Kolkata building ML systems end-to-end. Public GitHub statistics, follower rank, languages, tech stack and top repositories." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/public-builder-profile-dark.svg" />
+  <img src="./assets/public-builder-profile.svg" alt="Rohit Ghosh. AI/ML engineering student in Kolkata building ML systems end-to-end. Public GitHub statistics, follower rank, languages, tech stack and top repositories." width="100%" />
 </picture>
 </a>
 
@@ -27,7 +23,9 @@
 
 ### 🐍 Contribution Snake
 
-[![snake animation](https://raw.githubusercontent.com/Rohitghosh14/Rohitghosh14/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)](https://github.com/Rohitghosh14)
-[![snake animation](https://raw.githubusercontent.com/Rohitghosh14/Rohitghosh14/output/github-contribution-grid-snake.svg#gh-light-mode-only)](https://github.com/Rohitghosh14)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rohitghosh14/Rohitghosh14/output/github-contribution-grid-snake-dark.svg" />
+  <img alt="snake animation" src="https://raw.githubusercontent.com/Rohitghosh14/Rohitghosh14/output/github-contribution-grid-snake.svg" width="100%" />
+</picture>
 
 <sub>Public statistics refresh automatically every day. <a href="./RANKING.md">Sources and methodology</a>.</sub>
