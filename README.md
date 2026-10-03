@@ -111,7 +111,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Rohitghosh14&label=Profile%20Views&color=8b93ff&style=for-the-badge" alt="Profile Views" />
+  <img src="https://hits.sh/github.com/Rohitghosh14.svg?style=for-the-badge&label=Profile%20Views&color=8b93ff" alt="Profile Views" />
 </p>
 
 ---
