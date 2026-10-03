@@ -1,9 +1,9 @@
 <a href="https://github.com/Rohitghosh14?tab=repositories">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/public-builder-profile-mobile-dark.svg" />
-  <source media="(max-width: 600px)" srcset="./assets/public-builder-profile-mobile.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/public-builder-profile-dark.svg" />
-  <img src="./assets/public-builder-profile.svg" alt="Rohit Ghosh. AI/ML engineering student in Kolkata building ML systems end-to-end. Public GitHub statistics, follower rank, builder index, top repositories and tech stack." width="100%" />
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/public-builder-profile-mobile-dark.svg?v=2" />
+  <source media="(max-width: 600px)" srcset="./assets/public-builder-profile-mobile.svg?v=2" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/public-builder-profile-dark.svg?v=2" />
+  <img src="./assets/public-builder-profile.svg?v=2" alt="Rohit Ghosh. AI/ML engineering student in Kolkata building ML systems end-to-end. Public GitHub statistics, follower rank, builder index, top repositories and tech stack." width="100%" />
 </picture>
 </a>
 
